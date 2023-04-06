@@ -3,7 +3,6 @@ const app = express();
 const http = require('http');
 const {Server} = require('socket.io');
 const cors = require('cors');
-const { Socket } = require('dgram');
 
 const port = process.env.port || 3000
 
