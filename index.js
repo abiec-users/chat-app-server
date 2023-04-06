@@ -5,6 +5,8 @@ const {Server} = require('socket.io');
 const cors = require('cors');
 const { Socket } = require('dgram');
 
+const port = process.env.port || 3000
+
 //apply cors to app
 app.use(cors)
 
@@ -29,6 +31,6 @@ io.on('connection', (socket)=>{
 })
 
 //listen server method
-server.listen(3001, ()=>{
+server.listen(port, ()=>{
     console.log('server is listening!')
 })
